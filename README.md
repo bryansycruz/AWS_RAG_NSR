@@ -180,13 +180,12 @@ aws-nsr/
 │   └── LEEME.txt       # Instrucciones sobre la carpeta s3
 ├── main.py             # Punto de entrada alternativo
 ├── .env.example        # Plantilla de variables de entorno
-├── .env                # Variables de entorno reales (NO se sube a git)
-├── .gitignore          # Archivos excluidos del repositorio
+├── .gitignore          # Que no se sube a github
 ├── requirements.txt    # Dependencias de Python
 ├── pyproject.toml      # Metadatos del proyecto
-├── bot.JPG             # Imagen del sidebar
-├── Diagrama en blanco.png  # Diagrama de arquitectura AWS
-└── README.md           # Este archivo
+├── bot.JPG             # Logo del Bot
+├── Diagrama_AWS.png    # Diagrama de arquitectura AWS
+└── README.md           
 ```
 
 ---
@@ -198,7 +197,7 @@ aws-nsr/
 | **Amazon S3** | Almacenamiento de documentos PDF de la NSR-10 |
 | **Amazon Bedrock** | Orquestacion de la Knowledge Base y acceso a modelos |
 | **Amazon Titan Embeddings v2** | Generacion de vectores semanticos de los documentos |
-| **Amazon OpenSearch Serverless** | Almacenamiento y busqueda vectorial (k-NN) |
+| **Amazon OpenSearch Serverless** | Almacenamiento y busqueda vectorial |
 | **Claude 3.5 Sonnet** | Modelo de lenguaje para generacion de respuestas |
 | **Streamlit** | Interfaz web del chatbot |
 | **boto3** | SDK de AWS para Python |
