@@ -1,0 +1,37 @@
+================================================================================
+ CARPETA s3/ — Documentos PDF para la NSR-10
+================================================================================
+
+Esta carpeta es donde debes colocar los archivos PDF de la NSR-10 que seran
+subidos a tu bucket de Amazon S3.
+
+INSTRUCCIONES:
+
+1. Coloca aqui todos los archivos PDF de la norma NSR-10 que quieras consultar
+   con el chatbot. Por ejemplo:
+   - NSR-10_Titulo_A.pdf
+   - NSR-10_Titulo_B.pdf
+   - NSR-10_Titulo_C.pdf
+   - (cualquier otro documento PDF relevante)
+
+2. Una vez colocados los archivos, ejecuta el script de carga desde la raiz
+   del proyecto:
+
+       python upload_s3.py
+
+   Esto subira automaticamente todos los PDFs de esta carpeta a tu bucket S3.
+
+3. Asegurate de tener configurado en tu archivo .env:
+   - S3_BUCKET_NAME con el nombre del bucket donde se almacenaran los PDFs.
+   - AWS_REGION con la region donde creaste el bucket.
+
+4. Despues de subir los archivos, debes sincronizar la Knowledge Base en la
+   consola de Amazon Bedrock para que los nuevos documentos sean indexados.
+
+NOTAS:
+- Solo se suben archivos con extension .pdf
+- Los archivos de esta carpeta NO se suben al repositorio de git (estan en
+  .gitignore) porque pueden ser muy pesados.
+- Si necesitas agregar mas documentos en el futuro, simplemente colocalos
+  aqui y vuelve a ejecutar el script. Los archivos que ya existan en S3 se
+  sobreescriben automaticamente.

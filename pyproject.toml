@@ -1,0 +1,7 @@
+[project]
+name = "aws-nsr"
+version = "0.1.0"
+description = "Asistente RAG para la NSR-10 con AWS Bedrock y Streamlit"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
