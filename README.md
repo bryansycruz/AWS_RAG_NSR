@@ -2,7 +2,7 @@
 
 Chatbot inteligente que responde preguntas sobre el **Reglamento Colombiano de Construccion Sismo Resistente (NSR-10)** utilizando un sistema de **Retrieval-Augmented Generation (RAG)** con servicios de AWS y una interfaz web con Streamlit.
 
-![Arquitectura del sistema](Diagrama%20en%20blanco.png)
+![Arquitectura del sistema](Diagram.png)
 
 ---
 
