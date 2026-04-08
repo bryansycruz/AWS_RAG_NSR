@@ -63,7 +63,7 @@ Crea un usuario o rol de IAM con las siguientes politicas:
    - **Amazon Titan Text Embeddings v2** (para generar embeddings)
    - **Anthropic Claude 3.5 Sonnet** (para generar respuestas) — o el modelo que prefieras.
 
-### 4. Amazon Bedrock — Knowledge Base
+### 4. Amazon Bedrock — Knowledge Base 
 
 1. Ve a **Bedrock > Knowledge bases > Create knowledge base**.
 2. Configura:
@@ -98,7 +98,7 @@ cd aws-nsr
 ### 2. Crear entorno virtual
 
 ```bash
-python -m venv venv
+python -m .venv venv
 
 # Linux / Mac:
 source venv/bin/activate
